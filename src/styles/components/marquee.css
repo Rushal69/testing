@@ -1,0 +1,30 @@
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    margin: var(--spacing-3xl) 0;
+}
+
+.marquee {
+    display: flex;
+    width: fit-content;
+    gap: var(--spacing-4xl);
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    gap: var(--spacing-4xl);
+}
+
+.marquee-content h1 {
+    margin: 0 var(--spacing-lg);
+    font-size: clamp(96px, 10vw, 180px);
+}
+
+.marquee-content span {
+    display: flex;
+    align-items: center;
+    font-size: clamp(48px, 5vw, 90px);
+}

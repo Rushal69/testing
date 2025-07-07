@@ -1,0 +1,19 @@
+/* Import all style modules */
+@import './base/variables.css';
+@import './base/fonts.css';
+@import './base/reset.css';
+@import './components/preloader.css';
+@import './components/cursor.css';
+@import './components/navigation.css';
+@import './components/hero.css';
+@import './components/about.css';
+@import './components/services.css';
+@import './components/approach.css';
+@import './components/work.css';
+@import './components/pricing.css';
+@import './components/why-us.css';
+@import './components/faq.css';
+@import './components/footer.css';
+@import './components/buttons.css';
+@import './components/marquee.css';
+@import './utilities/responsive.css';

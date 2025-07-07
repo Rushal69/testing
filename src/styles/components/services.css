@@ -1,0 +1,84 @@
+.service {
+    background-color: var(--black);
+    padding: 4vw 0;
+    margin-top: -1px;
+}
+
+.service-container h4 {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.service-container {
+    max-width: var(--max-width-content);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.service-card {
+    position: relative;
+    width: 100%;
+    padding: clamp(40px, 3.5vw, 100px);
+    padding-left: clamp(20px, 3.5vw, 100px);
+    padding-right: clamp(20px, 3.5vw, 100px);
+    border-top: 1px solid var(--white-gray);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.service-card:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.service-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-card h1 {
+    font-size: var(--font-size-xl);
+    opacity: 0.9;
+}
+
+.service-card svg {
+    transition: transform var(--transition-normal);
+}
+
+.service-card:hover svg {
+    transform: translate(4px, -4px);
+}
+
+.elemlast {
+    border-bottom: 1px solid var(--black-gray);
+}
+
+.service-card img {
+    opacity: 0;
+    pointer-events: none;
+    width: clamp(240px, 20vw, 300px);
+    height: auto;
+    object-fit: cover;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius-md);
+    transition: opacity var(--transition-normal);
+}
+
+.definition {
+    display: none;
+    margin-top: var(--spacing-lg);
+    font-size: clamp(24px, 0.9vw, 42px);
+    color: var(--black-gray);
+    max-width: 1080px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.definition.active {
+    display: block;
+    opacity: 1;
+    height: auto;
+}

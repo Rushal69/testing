@@ -1,0 +1,17 @@
+#minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    background-color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    #minicircle {
+        display: none !important;
+    }
+}

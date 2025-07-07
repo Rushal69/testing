@@ -1,0 +1,132 @@
+.why-us {
+    background-color: var(--black);
+    position: relative;
+    height: 1800px;
+    max-width: var(--max-width-site);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.why-us-heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.why-us-heading h1 {
+    font-size: clamp(40px, 4.1667vw, 80px);
+    text-align: center;
+    color: var(--white);
+}
+
+.whyus-container {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.33vw;
+    width: calc(clamp(228px, 19.79vw, 380px) + clamp(360px, 30vw, 600px) + 3.33vw);
+    height: clamp(348px, 30vw, 580px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.whyus-img {
+    position: relative;
+    width: clamp(228px, 19.79vw, 380px);
+    height: auto;
+}
+
+.whyus-img img {
+    width: clamp(228px, 19.79vw, 380px);
+    border-radius: var(--border-radius-md);
+}
+
+.whyuscontent-box {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: var(--spacing-4xl);
+    position: relative;
+    height: 100%;
+}
+
+.whyuscontent {
+    position: relative;
+    width: clamp(360px, 30vw, 600px);
+}
+
+.whyuscontent p {
+    font-size: clamp(12px, 1.14vw, 22px);
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+    white-space: nowrap;
+}
+
+.whyuscontent a {
+    background-color: var(--white);
+    color: var(--black);
+    margin-top: var(--spacing-lg);
+}
+
+@media (max-width: 1680px) {
+    .why-us {
+        height: 1500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .why-us {
+        height: 1280px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .why-us {
+        height: 1080px;
+    }
+    
+    .whyus-container {
+        top: 55%;
+    }
+}
+
+@media (max-width: 1080px) {
+    .whyuscontent p {
+        font-size: var(--font-size-base);
+        white-space: wrap;
+    }
+    
+    .whyuscontent br {
+        display: none;
+    }
+    
+    .whyus-container {
+        top: 50%;
+    }
+}
+
+@media (max-width: 980px) {
+    .why-us {
+        min-height: 120vh;
+    }
+    
+    .why-us-heading {
+        top: 40%;
+    }
+    
+    .whyus-img {
+        display: none;
+    }
+    
+    .whyus-container {
+        left: 10%;
+        top: 70%;
+        width: auto;
+        height: auto;
+        transform: none;
+    }
+}
