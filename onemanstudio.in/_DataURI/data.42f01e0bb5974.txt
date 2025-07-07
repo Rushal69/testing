@@ -1,1 +1,0 @@
-chrome-extension://mfidniedemcgceagapgdekdbmanojomk/contentFunc.js
